@@ -1,0 +1,37 @@
+.location {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 10px;
+
+  .stats {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .progress {
+      display: flex;
+      width: 120px;
+      height: 10px;
+      background-color: rgba(255, 255, 255, 0.121);
+      border-radius: 5px;
+      overflow: hidden;
+      transform: rotate(360deg) scaleX(-1);
+      
+      .progress-fill {
+        opacity: 0;
+        width: 0%;
+        height: 10px;
+        background-color: rgb(31, 222, 243);
+        border-radius: 5px;
+        transition: 2s ease;
+      }
+
+    }
+  }
+
+  // span {
+  //   width: 90px;
+  //   text-align: right;
+  // }
+}

@@ -1,0 +1,398 @@
+.details-info {
+  color: white;
+  height: calc(100vh - 70px);
+  background-color: rgb(44, 51, 63);
+
+  .items {
+    min-width: 950px;
+    padding-top: 100px;
+    padding-left: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr ; 
+    position: relative;
+
+    .connection {
+      display: flex;
+      gap: 5px;
+      position: relative;
+      margin-bottom: 50px;
+
+      .arrow {
+        width: 120px;
+        display: flex;
+        justify-content: center;
+        margin-top: 9%;
+        position: relative;
+       
+        .numbers {
+          position: absolute;
+          top: -20px;
+          color: rgba(255, 255, 255, 0.406);
+        }
+        .line {
+          margin-top: 3px;
+          width: 90px;
+          background: rgba(181, 181, 181, 0.401);
+          height: 3px;
+          float: left;
+          // cursor: pointer;
+        }
+
+        .point {
+          width: 0;
+          height: 0;
+          border-top: 5px solid transparent;
+          border-bottom: 5px solid transparent;
+          border-left: 10px solid rgba(181, 181, 181, 0.401);
+          float: right;
+        }
+
+        .point-left {
+          width: 0;
+          height: 0;
+          border-top: 5px solid transparent;
+          border-bottom: 5px solid transparent;
+          border-right: 10px solid rgba(181, 181, 181, 0.401);
+          float: right;
+          
+          
+        }
+      }
+
+      .arrow:hover .line {
+        background-color: rgb(53, 167, 192);
+      }
+      .arrow:hover .numbers {
+        color: rgb(255, 255, 255);
+      }
+      .arrow:hover .point {
+        border-left: 10px solid rgb(53, 167, 192);
+      }
+      .arrow:hover .point-left {
+        border-right: 10px solid rgb(53, 167, 192);
+      }
+    
+
+      .item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+        
+        .circle {
+          width: 100px;
+          height: 100px;
+          background-color: rgb(61, 72, 90);
+          border-radius: 50%;
+          position: relative;
+          margin-bottom: 10px;
+          padding-top: 50%;
+          cursor: pointer;
+        }
+        .circle:hover {
+          background-color: rgb(30, 123, 144);
+        }
+  
+        .quantity {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+        }
+  
+        .item-info {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+
+      .arrow-curved {
+        width: 520px;
+        display: flex;
+        justify-content: center;
+        margin-top: 9%;
+        position: relative;
+        position: absolute;
+        bottom: 20px;
+        left:3%;
+
+       
+        .numbers {
+          position: absolute;
+          bottom: -30px;
+          color: rgba(255, 255, 255, 0.406);
+        }
+  
+        .line {
+          margin-top: 3px;
+          width: 485px;
+          float: left;
+          // cursor: pointer;
+          height: 100px;
+          border : 3px solid rgba(255, 255, 255, 0.265);
+          border-color: transparent transparent rgba(255, 255, 255, 0.249) transparent;
+          border-radius: 9%/100px 100px;
+          // background-color: gray;
+        }
+   
+        .point-up {
+          width: 0;
+          height: 0;
+          border-left: 6px solid transparent;
+          border-right: 6px solid transparent;
+          border-bottom: 8px solid rgba(181, 181, 181, 0.401);
+          float: right;
+          position: absolute;
+          bottom: 10px;
+          left: 22px;
+          
+        }
+      }
+
+      .arrow-curved:hover .numbers {
+        color: rgb(255, 255, 255);
+      }
+
+      .arrow-curved:hover .point-up {
+        border-bottom: 8px solid rgb(53, 167, 192);
+      }
+
+      .arrow-curved:hover .line {
+        border-color: transparent transparent rgb(53, 167, 192) transparent;
+      }
+    }
+    
+  }
+
+  .options {
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    width: 180px;
+    height: 90px;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.222);
+    background-color: rgb(61, 72, 90);
+    position: relative;
+    position: absolute;
+    top: -97px;
+    cursor: pointer;
+
+    span {
+      margin-top: 15px;
+      margin-right: 20px;
+      color: rgba(255, 255, 255, 0.77);
+    }
+
+    .line {
+      width: 80%;
+      height: 1px;
+      background-color: rgba(255, 255, 255, 0.318);
+      margin-top: 13px;
+      margin-left: 18px;
+    }
+
+    .point-down {
+      width: 0;
+      height: 0;
+      border-left: 4px solid transparent;
+      border-right: 4px solid transparent;
+      border-top: 6px solid rgba(246, 246, 246, 0.597);
+      margin-top: 10px;
+      margin-left: 20px;
+    }
+
+    .point-down2 {
+      width: 0;
+      height: 0;
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+      border-top: 6px solid rgba(246, 246, 246, 0.25);
+      margin-top: 10px;
+      margin-left: 20px;
+      position: absolute;
+      bottom: -7px;
+      left: 36%;
+    }
+
+  }
+
+  .options:hover .line {
+    background-color: white;
+  }
+
+  .options2 {
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    width: 180px;
+    height: 155px;
+    border: 1px solid rgba(255, 255, 255, 0.222);
+    background-color: rgb(61, 72, 90);
+    position: absolute;
+    top: 40%;
+    right: 54%;
+    cursor: pointer;
+
+    span {
+      margin-right: 15px;
+      margin-top: 15px;
+    }
+
+    .line {
+      width: 80%;
+      height: 1px;
+      background-color: rgba(255, 255, 255, 0.318);
+      margin-top: 10px;
+      margin-left: 18px;
+    }
+
+    ul {
+      list-style-type: none;
+      margin-top: 20px;
+
+      li {
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-right: 20px;
+      } 
+
+      li:hover {
+        background-color: rgb(96, 112, 137);
+      }
+    }
+    
+  }
+}
+
+.side-arrows {
+  display: flex;
+  position: absolute;
+  top: 46%;
+  left: 12%;
+
+  .arrow-up {
+    width: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+   
+    .numbers-up{
+      position: absolute;
+      top: 12px;
+      left: -10px;
+      color: rgba(255, 255, 255, 0.406);
+    }
+    .line-up {
+      width: 3px;
+      background: rgba(181, 181, 181, 0.401);
+      height: 25px;
+      float: left;
+    }
+    
+    .point-up {
+      width: 0;
+      height: 0;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-bottom: 10px solid rgba(181, 181, 181, 0.401);
+      float: right;
+    }
+  }
+  
+  .arrow-down {
+    width: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+   
+    .numbers-down{
+      position: absolute;
+      top: 12px;
+      right: -10px;
+      color: rgba(255, 255, 255, 0.406);
+    }
+    .line-down {
+      width: 3px;
+      background: rgba(181, 181, 181, 0.401);
+      height: 25px;
+      float: left;
+  
+    }
+    
+    .point-down {
+      width: 0;
+      height: 0;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-top: 10px solid rgba(181, 181, 181, 0.401);
+      float: right;
+    }
+  }
+
+}
+
+.side-arrows:hover .line-down,
+.side-arrows:hover .line-up {
+  background-color: rgb(53, 167, 192);
+  color:white;
+  
+}
+.side-arrows:hover .numbers-down,
+.side-arrows:hover .numbers-up {
+  color: white;
+}
+.side-arrows:hover .point-down {
+  border-top: 10px solid rgb(53, 167, 192);
+
+}
+.side-arrows:hover .point-up {
+  border-bottom: 10px solid rgb(53, 167, 192);
+}
+
+
+.arrow-rotate {
+  width: 220px;
+  display: flex;
+  justify-content: center;
+  margin-top: 9%;
+  position: relative;
+  position: absolute;
+  top: 30%;
+  left: 14%;
+  transform: rotate(-47deg);
+ 
+  .numbers-rotate {
+    position: absolute;
+    top: -20px;
+    color: rgba(255, 255, 255, 0.406);
+  }
+  .line-rotate {
+    margin-top: 3px;
+    width: 180px;
+    background: rgba(181, 181, 181, 0.401);
+    height: 3px;
+    float: left;
+  }
+
+  .point-left-rotate {
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-right: 10px solid rgba(181, 181, 181, 0.401);
+    float: right;
+  }
+}
+.arrow-rotate:hover .line-rotate {
+  background-color: rgb(53, 167, 192);
+}
+.arrow-rotate:hover .numbers-rotate {
+  color: white;
+}
+.arrow-rotate:hover .point-left-rotate {
+  border-right: 10px solid rgb(53, 167, 192);
+}

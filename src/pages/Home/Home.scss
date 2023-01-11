@@ -1,0 +1,19 @@
+.home {
+  background-color: black;
+  height: 100vh;
+  min-width: 100%;
+  overflow-x: scroll;
+
+  .container {
+    display: flex;
+    margin: 10px;
+    gap: 10px;
+    
+    .main-info {
+      flex: 2;
+    }
+    .details {
+      flex: 6;
+    }
+  }
+}
