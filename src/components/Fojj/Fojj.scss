@@ -1,4 +1,5 @@
 .fojj {
+  overflow-x: scroll;
   min-width: 1300px;
   height: 95%;
   background-color: rgb(44, 51, 63);
@@ -95,6 +96,7 @@
   }
 
   .fojj-bottom {
+    height: calc(100% - 200px);
     display: flex;
     color: white;
 
@@ -107,10 +109,12 @@
         align-items: center;
         gap: 8px;
         text-align: center;
+        margin-top: 20px;
 
         .point {
           width: 7px;
           height: 7px;
+          margin-top: 0px;
           background-color: rgb(207, 196, 49);
           border-radius: 50%;
         }
@@ -158,22 +162,25 @@
 
     .Exit-fojj {
       flex: 2;
-      height: 500px;
+      height: 100%;
       overflow-y: scroll;
 
       div {
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 8px;
         text-align: center;
-        // margin-top: 20px;
+        margin-top: 20px;
 
         .point {
+          margin-top: 0px;
           width: 7px;
           height: 7px;
           background-color: rgb(141, 141, 197);
           border-radius: 50%;
+
         }
       }
 
@@ -201,16 +208,11 @@
       }
 
       .contanier {
-        // height: auto;
-        // overflow-y: scroll;
         display: flex;
         flex-direction: column;
         margin: 0;
         padding: 0;
-
       }
-
-
     }
 
     .remain-fojj {
@@ -222,9 +224,10 @@
         align-items: center;
         gap: 8px;
         text-align: center;
-        // margin-top: 20px;
+        margin-top: 20px;
 
         .point {
+          margin-top: 0px;
           width: 7px;
           height: 7px;
           background-color: rgb(110, 212, 242);

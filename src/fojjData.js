@@ -67,25 +67,25 @@ const fojj = [
     arrival: "07:20:00"
   },
   {
-    id: 12,
+    id: 21,
     fojjName: "P1-A12-07",
     exit: "07:20:00",
     arrival: "07:20:00"
   },
   {
-    id: 9,
+    id: 23,
     fojjName: "P1-A12-07",
     exit: "07:20:00",
     arrival: "07:20:00"
   },
   {
-    id: 10,
+    id: 22,
     fojjName: "P1-A12-07",
     exit: "07:20:00",
     arrival: "07:20:00"
   },
   {
-    id: 11,
+    id: 20,
     fojjName: "P1-A12-07",
     exit: "07:20:00",
     arrival: "07:20:00"
