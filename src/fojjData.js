@@ -96,6 +96,48 @@ const fojj = [
     exit: "07:20:00",
     arrival: "07:20:00"
   },
+  {
+    id: 13,
+    fojjName: "P1-A12-07",
+    exit: "07:20:00",
+    arrival: "07:20:00"
+  },
+  {
+    id: 14,
+    fojjName: "P1-A12-07",
+    exit: "07:20:00",
+    arrival: "07:20:00"
+  },
+  {
+    id: 15,
+    fojjName: "P1-A12-07",
+    exit: "07:20:00",
+    arrival: "07:20:00"
+  },
+  {
+    id: 16,
+    fojjName: "P1-A12-07",
+    exit: "07:20:00",
+    arrival: "07:20:00"
+  },
+  {
+    id: 17,
+    fojjName: "P1-A12-07",
+    exit: "07:20:00",
+    arrival: "07:20:00"
+  },
+  {
+    id: 18,
+    fojjName: "P1-A12-07",
+    exit: "07:20:00",
+    arrival: "07:20:00"
+  },
+  {
+    id: 19,
+    fojjName: "P1-A12-09",
+    exit: "07:20:00",
+    arrival: "07:20:00"
+  },
  
 ]
 

@@ -7,9 +7,9 @@ export default function FojjTime({fojjStats}) {
   return (
     <table>
       <tbody>
-        <td>{arrival}</td>
-        <td>{exit}</td>
-        <td>{fojjName}</td>
+        <td className='row'>{arrival}</td>
+        <td className='row'>{exit}</td>
+        <td className='row'>{fojjName}</td>
       </tbody>
     </table>
   )
